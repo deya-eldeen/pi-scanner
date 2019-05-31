@@ -1,7 +1,7 @@
-echo "------------------------------------------"
-echo "| Showing MAC Addresses for all Pis      |";
-echo "| Written By Deya Eldeen, deyaeldeen.com |";
-echo "------------------------------------------"
+echo "---------------------------------------------------------------"
+echo "| Showing MAC Addresses for all Pis in you local network      |";
+echo "| Written By Deya Eldeen, deyaeldeen.com                      |";
+echo "---------------------------------------------------------------"
 
 PiMAC=$(sudo nmap -sN 192.168.8.* -p 22 | \
 grep -i "pi" | \
